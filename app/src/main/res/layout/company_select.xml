@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_option"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Company ID :"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

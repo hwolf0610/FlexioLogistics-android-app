@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top"
+        android:orientation="horizontal"
+        android:background="@color/colorLightBlue">
+        <LinearLayout
+            android:id="@+id/lin_back"
+            android:layout_width="@dimen/height_main"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Productos"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_x_large"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
